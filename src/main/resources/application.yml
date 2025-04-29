@@ -3,6 +3,9 @@ server:
   servlet:
     context-path: /api
 spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB # 开放更大文件上传体积
   application:
     name: lei-picture-backend
   # 数据库配置
